@@ -12,7 +12,7 @@ public class ServicioEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Servicio", nullable = false)
-    private int idServicio;
+    private Integer idServicio;
     @Basic
     @Column(name = "Fecha_Venc_Expediente", nullable = true)
     private Date fechaVencExpediente;

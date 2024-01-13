@@ -10,7 +10,7 @@ public class ContactoEmpresaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Contacto_Empresa", nullable = false)
-    private int idContactoEmpresa;
+    private Integer idContactoEmpresa;
     @Basic
     @Column(name = "Nombre", nullable = true, length = 45)
     private String nombre;

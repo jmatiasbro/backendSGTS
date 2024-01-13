@@ -11,7 +11,7 @@ public class HistoricoNotificacionesEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Historico_Notificaciones", nullable = false)
-    private int idHistoricoNotificaciones;
+    private Integer idHistoricoNotificaciones;
     @Basic
     @Column(name = "Observacion", nullable = true, length = 100)
     private String observacion;

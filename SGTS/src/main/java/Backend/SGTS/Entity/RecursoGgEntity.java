@@ -10,7 +10,7 @@ public class RecursoGgEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Recurso_GG", nullable = false)
-    private int idRecursoGg;
+    private Integer idRecursoGg;
     @Basic
     @Column(name = "Rol_id_Rol", nullable = false)
     private int rolIdRol;

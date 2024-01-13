@@ -10,7 +10,7 @@ public class EstadoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Estado", nullable = false)
-    private int idEstado;
+    private Integer idEstado;
     @Basic
     @Column(name = "Tipo_Estado", nullable = false, length = 45)
     private String tipoEstado;

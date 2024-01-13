@@ -10,7 +10,7 @@ public class RubroEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Rubro", nullable = false)
-    private int idRubro;
+    private Integer idRubro;
     @Basic
     @Column(name = "Rubro", nullable = false, length = 45)
     private String rubro;

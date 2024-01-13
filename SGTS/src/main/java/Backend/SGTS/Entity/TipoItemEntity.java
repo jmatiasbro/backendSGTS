@@ -10,7 +10,7 @@ public class TipoItemEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Tipo_Item", nullable = false)
-    private int idTipoItem;
+    private Integer idTipoItem;
     @Basic
     @Column(name = "Tipo_Item", nullable = false, length = 45)
     private String tipoItem;

@@ -10,7 +10,7 @@ public class DependenciaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Dependencia", nullable = false)
-    private int idDependencia;
+    private Integer idDependencia;
     @Basic
     @Column(name = "Dependencia", nullable = false, length = 45)
     private String dependencia;

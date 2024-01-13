@@ -10,7 +10,7 @@ public class ServicioEmpresaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Servicio_Empresa", nullable = false)
-    private int idServicioEmpresa;
+    private Integer idServicioEmpresa;
     @Basic
     @Column(name = "Costo_Servicio", nullable = false, precision = 0)
     private double costoServicio;

@@ -11,7 +11,7 @@ public class HistoricoEstadoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Historico_Estado", nullable = false)
-    private int idHistoricoEstado;
+    private Integer idHistoricoEstado;
     @Basic
     @Column(name = "Fecha", nullable = false)
     private Date fecha;

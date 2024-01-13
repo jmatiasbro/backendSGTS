@@ -11,7 +11,7 @@ public class ItemChecklistEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Item_Checklist", nullable = false)
-    private int idItemChecklist;
+    private Integer idItemChecklist;
     @Basic
     @Column(name = "Inicio_Estandar", nullable = true)
     private Date inicioEstandar;

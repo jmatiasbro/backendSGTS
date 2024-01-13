@@ -10,7 +10,7 @@ public class UsuarioPermisoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id_Usuario_Permiso", nullable = false)
-    private int idUsuarioPermiso;
+    private Integer idUsuarioPermiso;
     @Basic
     @Column(name = "Usuario_id_Usuario", nullable = false)
     private int usuarioIdUsuario;
