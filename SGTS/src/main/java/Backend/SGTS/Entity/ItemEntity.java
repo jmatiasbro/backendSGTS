@@ -12,9 +12,6 @@ public class ItemEntity {
     @Column(name = "id_Item", nullable = false)
     private Integer idItem;
     @Basic
-    @Column(name = "Descripcion", nullable = false, length = 60)
-    private String descripcion;
-    @Basic
     @Column(name = "Tipo_Item_id_Tipo_Item", nullable = false)
     private int tipoItemIdTipoItem;
     @Basic
@@ -26,6 +23,9 @@ public class ItemEntity {
     @Basic
     @Column(name = "Tipo_Servicio_id_Tipo_Servicio", nullable = false)
     private int tipoServicioIdTipoServicio;
+    @Basic
+    @Column(name = "Requisito_id_Requisito", nullable = false)
+    private int requisitoIdRequisito;
 
     public int getIdItem() {
         return idItem;
@@ -35,13 +35,6 @@ public class ItemEntity {
         this.idItem = idItem;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 
     public int getTipoItemIdTipoItem() {
         return tipoItemIdTipoItem;
@@ -74,17 +67,25 @@ public class ItemEntity {
     public void setTipoServicioIdTipoServicio(int tipoServicioIdTipoServicio) {
         this.tipoServicioIdTipoServicio = tipoServicioIdTipoServicio;
     }
+    
+    public int getRequisitoIdRequisito() {
+		return requisitoIdRequisito;
+	}
 
-    @Override
+	public void setRequisitoIdRequisito(int requisitoIdRequisito) {
+		this.requisitoIdRequisito = requisitoIdRequisito;
+	}
+
+	@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ItemEntity that = (ItemEntity) o;
-        return idItem == that.idItem && tipoItemIdTipoItem == that.tipoItemIdTipoItem && tipoServicioIdTipoServicio == that.tipoServicioIdTipoServicio && Objects.equals(descripcion, that.descripcion) && Objects.equals(rubroIdRubro, that.rubroIdRubro) && Objects.equals(dependenciaIdDependencia, that.dependenciaIdDependencia);
+        return idItem == that.idItem && tipoItemIdTipoItem == that.tipoItemIdTipoItem && tipoServicioIdTipoServicio == that.tipoServicioIdTipoServicio && Objects.equals(rubroIdRubro, that.rubroIdRubro) && Objects.equals(dependenciaIdDependencia, that.dependenciaIdDependencia) && Objects.equals(requisitoIdRequisito, that.requisitoIdRequisito);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idItem, descripcion, tipoItemIdTipoItem, rubroIdRubro, dependenciaIdDependencia, tipoServicioIdTipoServicio);
+        return Objects.hash(idItem, tipoItemIdTipoItem, rubroIdRubro, dependenciaIdDependencia, tipoServicioIdTipoServicio, requisitoIdRequisito);
     }
 }
