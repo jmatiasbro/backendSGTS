@@ -23,11 +23,15 @@ public class ItemChecklistController {
 	@Autowired
 	ItemChecklistService itemChecklistService;
 	
+	
+	/*
+	 * Gateway deshabilitado para eitar traer todos los ítem de checklist
 	// Obtengo todos los items de checklist
 	@GetMapping("/getAll")
 	public List<ItemChecklistEntity> getAll() {
 		return itemChecklistService.getAll();
 	}
+	*/
 	
 	// Obtengo un item de checklist por id
 	@GetMapping("/{id}")
