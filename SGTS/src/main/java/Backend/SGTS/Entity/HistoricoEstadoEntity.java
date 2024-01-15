@@ -2,7 +2,7 @@ package Backend.SGTS.Entity;
 
 import jakarta.persistence.*;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
@@ -14,7 +14,7 @@ public class HistoricoEstadoEntity {
     private Integer idHistoricoEstado;
     @Basic
     @Column(name = "Fecha", nullable = false)
-    private Date fecha;
+    private Timestamp fecha;
     @Basic
     @Column(name = "Servicio_id_Servicio", nullable = false)
     private int servicioIdServicio;
@@ -30,11 +30,11 @@ public class HistoricoEstadoEntity {
         this.idHistoricoEstado = idHistoricoEstado;
     }
 
-    public Date getFecha() {
+    public Timestamp getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(Timestamp fecha) {
         this.fecha = fecha;
     }
 
