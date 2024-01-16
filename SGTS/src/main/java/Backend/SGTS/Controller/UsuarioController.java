@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import Backend.SGTS.Entity.RecursoGgEntity;
 import Backend.SGTS.Entity.UsuarioEntity;
 import Backend.SGTS.Service.UsuarioService;
 
